@@ -1,10 +1,13 @@
 # Software Design Description
 ## For <project name>
 
-Version 0.1
-Prepared by <author>  
-<organization>  
-<date created>  
+Version 0.1  
+
+Prepared by **Syed Ale Ajwad**  
+
+NCRI Inc  
+
+17-10-2023  
 
 Table of Contents
 =================
@@ -45,34 +48,55 @@ Table of Contents
 |      |         |                     |           |
 
 ## 1. Introduction
-> This section should provide an overview of the entire document
+> This section provides an overview of the entire document.
 
 ### 1.1 Document Purpose
-Describe the purpose of the SDD and its intended audience.
+The purpose of this Software Design Description (SDD) is to provide a comprehensive overview of the design and architecture of PakistanCRM. It details the design aspects, components, and selected viewpoints for our CRM system. The document serves as a valuable reference for stakeholders, including developers, system operators, and project managers involved in the design and implementation of PakistanCRM.
 
 ### 1.2 Subject Scope
-<!-- TODO -->
+This SDD covers the design of PakistanCRM, a CRM system aimed at streamlining and enhancing internal processes within our organization. PakistanCRM is intended to facilitate efficient data management, streamline the engagement with debtors, and provide a user-friendly interface for collection agents to manage debtor information, track communications, and record payments. Additionally, the system provides the necessary feedback and reporting capabilities required for effective internal communication regarding the status of worked accounts.
 
 ### 1.3 Definitions, Acronyms and Abbreviations
+1. CRM: Customer Relationship Management
+2. SDD: Software Design Description
+3. UML: Unified Modeling Language
+4. Data Dictionary: Please refer to the [Data Dictionary Document] for detailed definitions and descriptions of data-related terms and entities used in PakistanCRM.
+
 
 ### 1.4 References
-List any other documents or Web addresses to which this SDD refers. Provide enough information so that the reader could access a copy of each reference, including title, author, version number, date, and source or location.
+> List any other documents or Web addresses to which this SDD refers. Provide enough information so that the reader could access a copy of each reference, including title, author, version number, date, and source or location.
 
 ### 1.5 Document Overview
-Describe what the rest of the document contains and how it is organized.
+This SDD is organized as follows:
+
+Section 1 provides an introduction to the document, outlining its purpose and scope.
+Section 2 delves into the design aspects of PakistanCRM, addressing stakeholder concerns, selected viewpoints, and specific views that will be presented.
+Section 3 contains any relevant appendixes.
+This document aims to provide a clear and detailed description of PakistanCRM's design and architecture, ensuring all stakeholders have a comprehensive understanding of the system.
 
 ## 2. Design
-> This section is the body of the SDD and should detail the nature and approach of the design.
+> This section is the body of the SDD and details the nature and approach of the design.
 
 ### 2.1 Stakeholder Concerns
-> Identify the different type of stakeholders to whom the SDD will be of interest and their concerns on the design subject. For example, on a prescriptive design, software developers are one of the main stakeholders and their concerns could be functionality and software interoperability, whereas operators may be more concerned with configurability and deployment options.
+PakistanCRM involves various stakeholders, each with specific concerns:
 
-> Usual design stakeholders include users, developers, operators, software designers, system integrators, maintainers, acquirers, and project managers. Design concerns are usually aligned with functional or non-functional properties like functionality, reliability, performance, or maintainability. Concerns can also be more specific or abstract like the feasibility of constructing and deploying the system, or e potential risks and impacts of the system to its stakeholders throughout its life cycle.
+**Developers:**
+Stakeholder: Developers
+- Design Concerns:
+  1. Functionality: Developers focus on ensuring the functionality of the system, addressing bug fixes, and developing new features.
+  2. Software Interoperability: They are concerned with code compatibility and integration.
+  3. Code Structure: Developers seek a robust and maintainable code structure.
+  4. Future Enhancements and Scalability: Planning for the future growth and scalability of the system.
+- Design Views Addressing Concerns: Logical Viewpoint, Dependency Viewpoint, Structure Viewpoint, Behavioral Viewpoint
 
-> The specific stakeholders entries should:
-* Be identifiable.
-* State their design concerns.
-* Reference the design views that address such concerns.
+
+**Business Development Team:**
+
+Stakeholder: Business Development Team
+- Design Concerns:
+  1. Alignment with Business Processes: The team is concerned with how the application aligns with and enhances business processes.
+  2. Effective Implementation of Business Logic: Ensuring that the system effectively implements business logic.
+- Design Views Addressing Concerns: Context Viewpoint, Behavioral Viewpoint
 
 ### 2.2 Selected Viewpoints
 > Identify and describe the viewpoints that were selected in order to address the stakeholders' concern identified in section 2.1. A viewpoint defines the perspective from which a design view is taken. Each selected viewpoint should state what concerns it addresses and identify the visualization language(s) it uses to do so.
